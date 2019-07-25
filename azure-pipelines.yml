@@ -36,8 +36,8 @@ steps:
     cacheHitVar: cacheHit
     path: cached
     key: |
-      $(KEY_SALT)-$(Agent.OS)-$(Agent.JobName)
-      $(FALLBACK_SALT)
+      "$(KEY_SALT)-$(Agent.OS)-$(Agent.JobName)"
+      "$(FALLBACK_SALT)"
     #  **/file*.txt,!**/file2.txt,!**/subfolder1/**
     # restoreKeys: |
     #   $(KEY_SALT)-$(Agent.OS)-$(Agent.JobName)
@@ -68,8 +68,8 @@ steps:
   inputs:
     cacheHitVar: cacheHit2
     key: |
-      $(Agent.OS)-$(Agent.JobName)
-      README23.md
+      "$(Agent.OS)-$(Agent.JobName)"
+      "README23.md"
     path: oldcached
   displayName: multi-line (old)
 
