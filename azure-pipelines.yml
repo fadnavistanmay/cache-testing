@@ -69,7 +69,7 @@ steps:
     cacheHitVar: cacheHit2
     key: |
       $(Agent.OS)-$(Agent.JobName)
-      README.md
+      README23.md
     path: oldcached
   displayName: multi-line (old)
 
