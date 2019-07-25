@@ -13,7 +13,7 @@ variables:
 strategy:
   matrix:
     private-new:
-      POOL_NAME: 'tafadnav'
+      POOL_NAME: 'tanmay'
     # private-new-wsl:
     #   POOL_NAME: 'jerick-z440-wsl'
     # private-master:
