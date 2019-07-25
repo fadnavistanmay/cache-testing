@@ -13,7 +13,7 @@ variables:
 strategy:
   matrix:
     private-new:
-      POOL_NAME: 'tanmay'
+      POOL_NAME: 'tafadnav'
     # private-new-wsl:
     #   POOL_NAME: 'jerick-z440-wsl'
     # private-master:
@@ -38,7 +38,7 @@ steps:
     key: |
       $(KEY_SALT)-$(Agent.OS)-$(Agent.JobName)
       $(FALLBACK_SALT)
-      **/file*.txt,!**/file2.txt,!**/subfolder1/**
+    #  **/file*.txt,!**/file2.txt,!**/subfolder1/**
     # restoreKeys: |
     #   $(KEY_SALT)-$(Agent.OS)-$(Agent.JobName)
   displayName: single-line (new)
